@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Em còn thương anh hongg 💘</title>
-  <style>
-    body {
-      background-color: #fff0f5;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-    }
+  <meta charset="UTF-8">
+  <title>Một câu hỏi nhỏ cho em ❤️</title>
+  <style>
+    /* (Giữ nguyên các đoạn CSS đã có) */
+    body {
+      background-color: #fff0f5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
 
-    h1 {
-      color: #ff3366;
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+    h1 {
+      color: #ff3366;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
 
-    p {
-      color: #ff6699;
-      font-size: 18px;
-    }
+    p {
+      color: #ff6699;
+      font-size: 18px;
+    }
 
-    img {
-      width: 250px;
-      margin-top: 20px;
-    }
+    img {
+      width: 250px;
+      margin-top: 20px;
+    }
 
-    .btn {
-      padding: 10px 20px;
-      font-size: 18px;
-      margin: 15px;
-      border-radius: 25px;
-      border: none;
-      cursor: pointer;
-      transition: 0.2s;
-    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 15px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+    }
 
-    #yes {
-      background-color: #ffccdd;
-      color: #d60047;
-      border: 2px solid #d60047;
-    }
+    #yes {
+      background-color: #ffccdd;
+      color: #d60047;
+      border: 2px solid #d60047;
+    }
 
-    #no {
-      background-color: #d60047;
-      color: white;
-      border: 2px solid #d60047;
-      position: relative;
-    }
-  </style>
+    #no {
+      background-color: #d60047;
+      color: white;
+      border: 2px solid #d60047;
+      position: relative;
+    }
+  </style>
 </head>
 <body>
-  <h1>Em còn thương anh honggg 👉👈</h1>
-  <p>Nếu em thoát trang này là em ghét anh luôn đó 😤</p>
-  <img src="https://i.pinimg.com/originals/f1/e4/3a/f1e43ae7c372f8c6cd0b7926bdbf1682.gif" alt="Cute gif">
-  <div>
-    <button class="btn" id="yes">Còn thương anh nhiều lắm 💖</button>
-    <button class="btn" id="no">Hết thương rồi 😢</button>
-  </div>
+  <h1>Em còn thương anh không? 👉👈</h1>
+  <p>Anh mong là em sẽ không bao giờ thoát ra khỏi trang này đâu nha 🫶</p>
+  <img src="https://i.pinimg.com/originals/f1/e4/3a/f1e43ae7c372f8c6cd0b7926bdbf1682.gif" alt="Cute gif">
+  <div>
+    <button class="btn" id="yes">Tất nhiên là còn rồi, nhiều lắm 💖</button>
+    <button class="btn" id="no">Hết thương rồi 😢</button>
+  </div>
 
-  <script>
-    const btnNo = document.getElementById('no');
-    btnNo.addEventListener('mouseover', function () {
-      const x = Math.random() * (window.innerWidth - 100);
-      const y = Math.random() * (window.innerHeight - 50);
-      btnNo.style.position = 'absolute';
-      btnNo.style.left = `${x}px`;
-      btnNo.style.top = `${y}px`;
-    });
+  <script>
+    const btnNo = document.getElementById('no');
+    btnNo.addEventListener('mouseover', function () {
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 50);
+      btnNo.style.position = 'absolute';
+      btnNo.style.left = `${x}px`;
+      btnNo.style.top = `${y}px`;
+    });
 
-    document.getElementById('yes').onclick = () => {
-      alert('Anh biết mà 😚 Em thương anh nhất trên đời 💘');
-    };
-  </script>
+    document.getElementById('yes').onclick = () => {
+      alert('Anh biết mà ❤️ Cảm ơn em đã ở bên anh!');
+    };
+  </script>
 </body>
 </html>
