@@ -1,64 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Em còn thương anh hongg 💘</title>
   <style>
     body {
+      background-color: #fff0f5;
+      font-family: Arial, sans-serif;
       text-align: center;
-      font-family: Arial;
-      background-color: #e0ebf5;
+      margin-top: 50px;
     }
+
     h1 {
       color: #ff3366;
       font-size: 40px;
-      margin-top: 60px;
+      margin-bottom: 10px;
     }
+
     p {
-      font-size: 20px;
-      color: #d70040;
+      color: #ff6699;
+      font-size: 18px;
     }
+
     img {
-      width: 200px;
+      width: 250px;
+      margin-top: 20px;
     }
+
     .btn {
       padding: 10px 20px;
-      border-radius: 20px;
-      border: 2px solid red;
-      margin: 10px;
       font-size: 18px;
+      margin: 15px;
+      border-radius: 25px;
+      border: none;
       cursor: pointer;
+      transition: 0.2s;
     }
-    #no {
-      background-color: #ff4d4d;
-      color: white;
-    }
+
     #yes {
-      background-color: white;
-      color: red;
+      background-color: #ffccdd;
+      color: #d60047;
+      border: 2px solid #d60047;
+    }
+
+    #no {
+      background-color: #d60047;
+      color: white;
+      border: 2px solid #d60047;
+      position: relative;
     }
   </style>
 </head>
 <body>
-  <h1>Em còn thương anh nữaaa hongg 👉👈</h1>
-  <p>Nếu em không chọn hoặc thoát là em ghét anh đó 😡</p>
-  <img src="https://i.pinimg.com/originals/f1/e4/3a/f1e43ae7c372f8c6cd0b7926bdbf1682.gif" alt="cute dog" />
-  <br />
-  <button id="no" class="btn">Hết thương rồi 😠</button>
-  <button id="yes" class="btn">Còn thương anh lắmm 🥹</button>
+  <h1>Em còn thương anh honggg 👉👈</h1>
+  <p>Nếu em thoát trang này là em ghét anh luôn đó 😤</p>
+  <img src="https://i.pinimg.com/originals/f1/e4/3a/f1e43ae7c372f8c6cd0b7926bdbf1682.gif" alt="Cute gif">
+  <div>
+    <button class="btn" id="yes">Còn thương anh nhiều lắm 💖</button>
+    <button class="btn" id="no">Hết thương rồi 😢</button>
+  </div>
 
   <script>
-    const noBtn = document.getElementById('no');
-    noBtn.addEventListener('mouseover', () => {
-      const x = Math.floor(Math.random() * (window.innerWidth - 100));
-      const y = Math.floor(Math.random() * (window.innerHeight - 40));
-      noBtn.style.position = 'absolute';
-      noBtn.style.left = `${x}px`;
-      noBtn.style.top = `${y}px`;
+    const btnNo = document.getElementById('no');
+    btnNo.addEventListener('mouseover', function () {
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 50);
+      btnNo.style.position = 'absolute';
+      btnNo.style.left = `${x}px`;
+      btnNo.style.top = `${y}px`;
     });
 
     document.getElementById('yes').onclick = () => {
-      alert("Anh cũng thương em nhìu lắm luôn á 💖");
+      alert('Anh biết mà 😚 Em thương anh nhất trên đời 💘');
     };
   </script>
 </body>
